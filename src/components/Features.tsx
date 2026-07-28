@@ -7,12 +7,12 @@ import {
 
 export const WhatsInside = () => {
   const cards = [
-    { title: 'Cars Reels', desc: 'High-octane car edits.' },
-    { title: 'Luxury Reels', desc: 'Premium lifestyle aesthetics.' },
-    { title: 'Mafia Cars', desc: 'Dark and moody cinematic cars.' },
-    { title: 'Trading', desc: 'Finance and crypto visuals.' },
-    { title: 'Animation', desc: 'Engaging animated loops.' },
-    { title: 'Escape Matrix', desc: 'Motivational deep content.' },
+    { title: 'Cars Reels', desc: 'High-octane car edits.', img: '/images/car-reels.png' },
+    { title: 'Luxury Reels', desc: 'Premium lifestyle aesthetics.', img: '/images/luxury-reels.png' },
+    { title: 'Mafia Cars', desc: 'Dark and moody cinematic cars.', img: '/images/mafia-cars.png' },
+    { title: 'Trading', desc: 'Finance and crypto visuals.', img: '/images/trading.png' },
+    { title: 'Animation', desc: 'Engaging animated loops.', img: '/images/animation.png' },
+    { title: 'Escape Matrix', desc: 'Motivational deep content.', img: '/images/escape-matrix.png' },
   ];
 
   return (
@@ -37,10 +37,14 @@ export const WhatsInside = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.6 }}
               whileHover={{ y: -5, boxShadow: '0 0 30px rgba(124,58,237,0.15)' }}
-              className="bg-cardSecondary border border-white/5 rounded-[28px] p-[40px] flex flex-col items-start transition-all"
+              className="bg-cardSecondary border border-white/5 rounded-[28px] p-6 flex flex-col items-center text-center transition-all"
             >
-              <div className="w-14 h-14 rounded-full bg-white/5 flex items-center justify-center mb-6">
-                <Play className="w-6 h-6 text-white" />
+              <div className="w-full aspect-square mb-6 rounded-[20px] overflow-hidden bg-white/5 relative">
+                {/* Fallback styling just in case image is missing */}
+                <div className="absolute inset-0 flex items-center justify-center text-white/10 -z-10">
+                  <Play className="w-12 h-12" />
+                </div>
+                <img src={card.img} alt={card.title} className="w-full h-full object-contain drop-shadow-[0_20px_20px_rgba(0,0,0,0.5)]" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">{card.title}</h3>
               <p className="text-mutedText">{card.desc}</p>
