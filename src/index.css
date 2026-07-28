@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-background: #090909;
+  --color-card: #111111;
+  --color-card-secondary: #171717;
+  --color-primary-text: #FFFFFF;
+  --color-secondary-text: #A1A1AA;
+  --color-muted-text: #71717A;
+  --color-accent: #7C3AED;
+  --color-accent-hover: #8B5CF6;
+  --font-satoshi: "Satoshi", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-primary-text font-inter antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-satoshi;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-xl border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+  }
+  
+  .glass-nav {
+    @apply bg-background/50 backdrop-blur-md border-b border-white/5;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#7C3AED] to-[#A855F7];
+  }
+  
+  .animate-scroll {
+    animation: scroll 40s linear infinite;
+    width: max-content;
+  }
+  
+  .pause {
+    animation-play-state: paused;
+  }
+  
+  .mask-edges {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+}
+
+@keyframes scroll {
+  to { transform: translateX(calc(-50% - 12px)); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
