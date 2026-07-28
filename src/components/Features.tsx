@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
-  Play, Download, CheckCircle2, TrendingUp, MonitorPlay, 
-  Smartphone, Clock, Layers, Layout, Zap, Video, Star, Users, Briefcase
+  Play, Download, CheckCircle2, TrendingUp,
+  Smartphone, Clock, Layout, Zap, Video, Star, Users, Briefcase
 } from 'lucide-react';
 
 export const WhatsInside = () => {
@@ -103,7 +103,7 @@ export const WhyWekreators = () => {
               className="bg-cardSecondary border border-white/5 rounded-[28px] p-[40px]"
             >
               <div className="text-accent mb-6">
-                {React.cloneElement(f.icon as React.ReactElement, { className: 'w-8 h-8' })}
+                {React.cloneElement(f.icon as any, { className: 'w-8 h-8' })}
               </div>
               <h3 className="text-xl font-bold text-white mb-3">{f.title}</h3>
               <p className="text-mutedText">{f.desc}</p>
@@ -138,7 +138,7 @@ export const WhoItsFor = () => {
               whileHover={{ scale: 1.02 }}
               className="glass-card p-8 rounded-[28px] flex flex-col items-center justify-center text-center space-y-4"
             >
-              <div className="text-white/80">{React.cloneElement(t.icon as React.ReactElement, { className: 'w-8 h-8' })}</div>
+              <div className="text-white/80">{React.cloneElement(t.icon as any, { className: 'w-8 h-8' })}</div>
               <div className="font-bold text-white">{t.title}</div>
             </motion.div>
           ))}

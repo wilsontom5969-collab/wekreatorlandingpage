@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Star, ChevronDown, CheckCircle2, Shield, Lock, Zap } from 'lucide-react';
+import { Star, ChevronDown, CheckCircle2, Shield, Zap } from 'lucide-react';
 
 export const Testimonials = () => {
   const reviews = [

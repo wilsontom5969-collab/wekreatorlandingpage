@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Refund = () => {
   return (
     <div className="pt-32 pb-20 max-w-4xl mx-auto px-6">

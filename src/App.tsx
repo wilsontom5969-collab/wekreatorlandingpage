@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar, Hero } from './components/HeaderHero';
 import { WhatsInside, WhyWekreators, WhoItsFor, TheDifference, ContentLibrary, HowItWorks } from './components/Features';
