@@ -7,12 +7,12 @@ import {
 
 export const WhatsInside = () => {
   const cards = [
-    { title: 'Cars Reels', desc: 'High-octane car edits.', img: '/images/car-reels.png' },
-    { title: 'Luxury Reels', desc: 'Premium lifestyle aesthetics.', img: '/images/luxury-reels.png' },
-    { title: 'Mafia Cars', desc: 'Dark and moody cinematic cars.', img: '/images/mafia-cars.png' },
-    { title: 'Trading', desc: 'Finance and crypto visuals.', img: '/images/trading.png' },
-    { title: 'Animation', desc: 'Engaging animated loops.', img: '/images/animation.png' },
-    { title: 'Escape Matrix', desc: 'Motivational deep content.', img: '/images/escape-matrix.png' },
+    { title: 'Cars Reels', desc: 'High-octane car edits.', img: '/images/Car Reels Cover.png' },
+    { title: 'Luxury Reels', desc: 'Premium lifestyle aesthetics.', img: '/images/Luxury Reels .png' },
+    { title: 'Mafia Cars', desc: 'Dark and moody cinematic cars.', img: '/images/mafia cars.png' },
+    { title: 'Trading', desc: 'Finance and crypto visuals.', img: '/images/Trading reels .png' },
+    { title: 'Animation', desc: 'Engaging animated loops.', img: '/images/Anime Reels .png' },
+    { title: 'Escape Matrix', desc: 'Motivational deep content.', img: '/images/Escape matrix.png' },
   ];
 
   return (
