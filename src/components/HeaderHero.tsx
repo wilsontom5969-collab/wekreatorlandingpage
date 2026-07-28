@@ -25,11 +25,11 @@ export const Navbar = () => {
           <img src="/logo.png" alt="Wekreators" className="h-8 md:h-10 object-contain" />
         </div>
         <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-secondaryText">
-          <a href="#home" className="hover:text-white transition-colors">Home</a>
-          <a href="#vault" className="hover:text-white transition-colors">Vault</a>
-          <a href="#features" className="hover:text-white transition-colors">Features</a>
-          <a href="#pricing" className="hover:text-white transition-colors">Pricing</a>
-          <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
+          <a href="/" className="hover:text-white transition-colors">Home</a>
+          <a href="/#vault" className="hover:text-white transition-colors">Vault</a>
+          <a href="/#features" className="hover:text-white transition-colors">Features</a>
+          <a href="/#pricing" className="hover:text-white transition-colors">Pricing</a>
+          <a href="/#faq" className="hover:text-white transition-colors">FAQ</a>
         </div>
         <div>
           <a 

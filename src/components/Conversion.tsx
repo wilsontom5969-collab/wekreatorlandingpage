@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, ChevronDown, CheckCircle2, Shield, Lock, Zap } from 'lucide-react';
 
@@ -172,14 +173,13 @@ export const Footer = () => {
           
           <div className="flex flex-col md:items-end justify-end space-y-4">
             <div className="flex space-x-6 text-sm font-medium text-secondaryText">
-              <a href="#" className="hover:text-white transition-colors">Privacy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms</a>
-              <a href="#" className="hover:text-white transition-colors">Refund Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Support</a>
+              <Link to="/privacy" className="hover:text-white transition-colors">Privacy</Link>
+              <Link to="/terms" className="hover:text-white transition-colors">Terms</Link>
+              <Link to="/refund" className="hover:text-white transition-colors">Refund Policy</Link>
+              <Link to="/support" className="hover:text-white transition-colors">Support</Link>
             </div>
             <div className="flex space-x-6 text-sm font-medium text-secondaryText">
-              <a href="#" className="hover:text-white transition-colors">Instagram</a>
-              <a href="#" className="hover:text-white transition-colors">X</a>
+              <a href="https://www.instagram.com/wekreators/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a>
             </div>
           </div>
         </div>
