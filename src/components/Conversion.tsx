@@ -82,9 +82,14 @@ export const Pricing = () => {
             ))}
           </ul>
           
-          <button className="w-full bg-accent hover:bg-accentHover text-white py-5 rounded-full text-lg font-bold transition-all shadow-[0_0_30px_rgba(124,58,237,0.3)] hover:shadow-[0_0_40px_rgba(124,58,237,0.5)]">
+          <a 
+            href="https://superprofile.bio/vp/wekreators-content-vault"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full inline-block text-center bg-accent hover:bg-accentHover text-white py-5 rounded-full text-lg font-bold transition-all shadow-[0_0_30px_rgba(124,58,237,0.3)] hover:shadow-[0_0_40px_rgba(124,58,237,0.5)]"
+          >
             Get Instant Access
-          </button>
+          </a>
           
           <div className="flex justify-center items-center space-x-6 mt-8 text-sm text-mutedText">
             <div className="flex items-center space-x-2">

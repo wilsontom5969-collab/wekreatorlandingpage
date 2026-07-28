@@ -32,9 +32,14 @@ export const Navbar = () => {
           <a href="#faq" className="hover:text-white transition-colors">FAQ</a>
         </div>
         <div>
-          <button className="bg-accent hover:bg-accentHover text-white px-6 py-2.5 rounded-full text-sm font-medium transition-all shadow-[0_0_20px_rgba(124,58,237,0.3)] hover:shadow-[0_0_30px_rgba(124,58,237,0.5)]">
+          <a 
+            href="https://superprofile.bio/vp/wekreators-content-vault" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="bg-accent hover:bg-accentHover text-white px-6 py-2.5 rounded-full text-sm font-medium transition-all shadow-[0_0_20px_rgba(124,58,237,0.3)] hover:shadow-[0_0_30px_rgba(124,58,237,0.5)]"
+          >
             Get Access
-          </button>
+          </a>
         </div>
       </div>
     </motion.nav>
@@ -69,10 +74,15 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-8 w-full">
-            <button className="w-full sm:w-auto bg-white text-black hover:bg-gray-200 px-8 py-4 rounded-full font-semibold transition-colors flex items-center justify-center space-x-2">
+            <a 
+              href="https://superprofile.bio/vp/wekreators-content-vault" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="w-full sm:w-auto bg-white text-black hover:bg-gray-200 px-8 py-4 rounded-full font-semibold transition-colors flex items-center justify-center space-x-2"
+            >
               <span>Get Wekreators Content Vault</span>
               <ChevronRight className="w-5 h-5" />
-            </button>
+            </a>
             <a href="#vault" className="w-full sm:w-auto glass-card hover:bg-white/5 text-white px-8 py-4 rounded-full font-semibold transition-colors border border-white/10 text-center inline-block">
               View What's Inside
             </a>
