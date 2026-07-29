@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   Play, Download, CheckCircle2, TrendingUp,
-  Smartphone, Clock, Layout, Zap, Video, Star, Users, Briefcase
+  Smartphone, Clock, Star
 } from 'lucide-react';
 
 export const WhatsInside = () => {
@@ -107,39 +107,6 @@ export const WhyWekreators = () => {
               </div>
               <h3 className="text-xl font-bold text-white mb-3">{f.title}</h3>
               <p className="text-mutedText">{f.desc}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export const WhoItsFor = () => {
-  const targets = [
-    { icon: <Smartphone />, title: 'Faceless Instagram Pages' },
-    { icon: <Layout />, title: 'Theme Pages' },
-    { icon: <Video />, title: 'Content Creators' },
-    { icon: <Zap />, title: 'Digital Entrepreneurs' },
-    { icon: <Users />, title: 'Freelancers' },
-    { icon: <Briefcase />, title: 'Agencies' },
-  ];
-
-  return (
-    <section className="py-[160px]">
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl md:text-[56px] leading-[1.1] font-black text-white mb-16 text-center">
-          Designed For
-        </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-          {targets.map((t, i) => (
-            <motion.div
-              key={i}
-              whileHover={{ scale: 1.02 }}
-              className="glass-card p-8 rounded-[28px] flex flex-col items-center justify-center text-center space-y-4"
-            >
-              <div className="text-white/80">{React.cloneElement(t.icon as any, { className: 'w-8 h-8' })}</div>
-              <div className="font-bold text-white">{t.title}</div>
             </motion.div>
           ))}
         </div>

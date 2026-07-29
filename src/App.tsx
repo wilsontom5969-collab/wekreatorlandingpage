@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar, Hero } from './components/HeaderHero';
-import { WhatsInside, WhyWekreators, WhoItsFor, TheDifference, ContentLibrary, HowItWorks } from './components/Features';
+import { WhatsInside, WhyWekreators, TheDifference, ContentLibrary, HowItWorks } from './components/Features';
 import { Testimonials, Pricing, FAQ, Footer } from './components/Conversion';
 
 import Privacy from './pages/Privacy';
@@ -22,7 +22,7 @@ const LandingPage = () => (
     <Hero />
     <WhatsInside />
     <WhyWekreators />
-    <WhoItsFor />
+
     <TheDifference />
     <ContentLibrary />
     <HowItWorks />

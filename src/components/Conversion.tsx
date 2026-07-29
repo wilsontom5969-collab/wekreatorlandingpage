@@ -32,12 +32,9 @@ export const Testimonials = () => {
                 {[1,2,3,4,5].map(star => <Star key={star} className="w-3.5 h-3.5 fill-current" />)}
               </div>
               <p className="text-white text-sm leading-relaxed mb-6">"{r.text}"</p>
-              <div className="flex items-center space-x-3 mt-auto">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-accent to-purple-500 shrink-0" />
-                <div>
-                  <div className="text-white font-bold text-xs">{r.name}</div>
-                  <div className="text-mutedText text-[11px]">{r.role}</div>
-                </div>
+              <div className="mt-auto">
+                <div className="text-white font-bold text-xs">{r.name}</div>
+                <div className="text-mutedText text-[11px]">{r.role}</div>
               </div>
             </div>
           ))}
@@ -128,7 +125,7 @@ export const FAQ = () => {
           {faqs.map((faq, i) => {
             const [open, setOpen] = useState(false);
             return (
-              <div key={i} className="bg-cardSecondary border border-white/5 rounded-2xl overflow-hidden">
+              <div key={i} className="bg-cardSecondary border border-white/5 rounded-2xl overflow-hidden transition-all duration-300 hover:bg-white/5 hover:border-white/10 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(124,58,237,0.1)]">
                 <button 
                   className="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none"
                   onClick={() => setOpen(!open)}
