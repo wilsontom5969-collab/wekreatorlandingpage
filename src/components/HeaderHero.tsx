@@ -20,26 +20,9 @@ export const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-center">
         <div className="flex items-center">
           <img src="/logo.png" alt="Wekreators" className="h-8 md:h-10 object-contain" />
-        </div>
-        <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-secondaryText">
-          <a href="/" className="hover:text-white transition-colors">Home</a>
-          <a href="/#vault" className="hover:text-white transition-colors">Vault</a>
-          <a href="/#features" className="hover:text-white transition-colors">Features</a>
-          <a href="/#pricing" className="hover:text-white transition-colors">Pricing</a>
-          <a href="/#faq" className="hover:text-white transition-colors">FAQ</a>
-        </div>
-        <div>
-          <a 
-            href="https://superprofile.bio/vp/wekreators-content-vault" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="bg-accent hover:bg-accentHover text-white px-6 py-2.5 rounded-full text-sm font-medium transition-all shadow-[0_0_20px_rgba(124,58,237,0.3)] hover:shadow-[0_0_30px_rgba(124,58,237,0.5)]"
-          >
-            Get Access
-          </a>
         </div>
       </div>
     </motion.nav>
