@@ -102,7 +102,7 @@ export const Hero = () => {
         >
           <div className="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay" />
           <img 
-            src="/images/vault-bundle.png" 
+            src="/images/Super profile cover wekreators product.png" 
             alt="Wekreators Content Vault" 
             className="w-full h-auto object-cover transform group-hover:scale-[1.02] transition-transform duration-700"
           />
