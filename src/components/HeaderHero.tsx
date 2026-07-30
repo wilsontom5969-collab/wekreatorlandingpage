@@ -87,6 +87,27 @@ export const Hero = () => {
           </div>
         </motion.div>
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
+        className="max-w-5xl mx-auto px-6 mt-16 w-full relative z-10"
+      >
+        <a 
+          href="https://superprofile.bio/vp/wekreators-content-vault" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="block w-full rounded-3xl overflow-hidden shadow-[0_0_60px_rgba(124,58,237,0.25)] hover:shadow-[0_0_100px_rgba(124,58,237,0.45)] transition-all duration-500 border border-white/10 relative group"
+        >
+          <div className="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay" />
+          <img 
+            src="/images/vault-bundle.png" 
+            alt="Wekreators Content Vault" 
+            className="w-full h-auto object-cover transform group-hover:scale-[1.02] transition-transform duration-700"
+          />
+        </a>
+      </motion.div>
     </section>
   );
 };
