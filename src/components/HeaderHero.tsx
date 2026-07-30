@@ -31,7 +31,7 @@ export const Navbar = () => {
 
 export const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex flex-col items-center justify-center pt-32 pb-20 overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/20 rounded-full blur-[120px] opacity-50 pointer-events-none" />
       
       <div className="max-w-4xl mx-auto px-6 w-full flex flex-col items-center justify-center text-center z-10">
