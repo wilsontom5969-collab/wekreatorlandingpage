@@ -16,7 +16,7 @@ export const WhatsInside = () => {
   ];
 
   return (
-    <section id="vault" className="py-[160px] relative">
+    <section id="vault" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <div className="inline-block text-accent font-bold text-xs tracking-widest mb-4">CONTENT VAULT</div>
@@ -87,7 +87,7 @@ export const WhyWekreators = () => {
   ];
 
   return (
-    <section id="features" className="py-[160px] bg-card relative">
+    <section id="features" className="py-20 bg-card relative">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl md:text-[56px] leading-[1.1] font-black text-white mb-16 text-center">
           Built For Modern Creators.
@@ -117,7 +117,7 @@ export const WhyWekreators = () => {
 
 export const TheDifference = () => {
   return (
-    <section className="py-[160px] bg-card">
+    <section className="py-20 bg-card">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl md:text-[56px] leading-[1.1] font-black text-white mb-16 text-center">
           Create More.<br />Search Less.
@@ -184,7 +184,7 @@ export const TheDifference = () => {
 
 export const ContentLibrary = () => {
   return (
-    <section className="py-[160px] relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-4xl md:text-[56px] leading-[1.1] font-black text-white mb-16">
           Inside The Content Vault
@@ -223,7 +223,7 @@ export const ContentLibrary = () => {
 
 export const HowItWorks = () => {
   return (
-    <section className="py-[160px] bg-card">
+    <section className="py-20 bg-card">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl md:text-[56px] leading-[1.1] font-black text-white mb-20 text-center">
           How It Works

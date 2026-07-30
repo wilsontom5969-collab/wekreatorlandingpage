@@ -17,7 +17,7 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section className="py-[160px] overflow-hidden">
+    <section className="py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 text-center mb-16">
         <h2 className="text-4xl md:text-[56px] leading-[1.1] font-black text-white">
           Loved by Modern Creators
@@ -46,7 +46,7 @@ export const Testimonials = () => {
 
 export const Pricing = () => {
   return (
-    <section id="pricing" className="py-[160px] bg-card relative">
+    <section id="pricing" className="py-20 bg-card relative">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <div className="inline-block text-accent font-bold text-xs tracking-widest mb-4">LIFETIME ACCESS</div>
         <h2 className="text-4xl md:text-[56px] leading-[1.1] font-black text-white mb-16">
@@ -115,7 +115,7 @@ export const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-[160px]">
+    <section id="faq" className="py-20">
       <div className="max-w-3xl mx-auto px-6">
         <h2 className="text-4xl md:text-[56px] leading-[1.1] font-black text-white mb-16 text-center">
           FAQ
