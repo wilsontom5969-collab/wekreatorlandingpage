@@ -92,7 +92,7 @@ export const Hero = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-        className="max-w-5xl mx-auto px-6 mt-16 w-full relative z-10"
+        className="max-w-4xl mx-auto px-6 mt-12 w-full relative z-10"
       >
         <a 
           href="https://superprofile.bio/vp/wekreators-content-vault" 
